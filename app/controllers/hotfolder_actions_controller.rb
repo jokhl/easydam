@@ -1,0 +1,2 @@
+class HotfolderActionsController < ApplicationController
+end

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>easyDAM</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'framework', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="absolute top-0 left-0 w-screen h-screen overflow-hidden">
+      <%= image_tag "wallpapers/2.jpg", class: "-m-8 filter blur-xl", style: "min-width: 120%; min-height: 120%;" %>
+    </div>
+    <div class="absolute top-0 left-0 flex items-center justify-center w-screen h-screen">
+      <%= yield %>
+    </div>
+  </body>
+</html>
